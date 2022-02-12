@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package demo;
+
+option go_package = "proto";
+
+// Request proto for DemoService
+message DemoRequest {
+  repeated int32 keys = 1;
+}
+
+// Response proto for DemoService
+message DemoResponse {
+  repeated int64 answers = 1;
+}
+
+// RPC for DemoService
+service DemoService {
+  rpc GetFeature(DemoRequest) returns (DemoResponse);
+}

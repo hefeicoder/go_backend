@@ -1,9 +1,5 @@
 # go_backend
-bootstrap template for golang backend with bazel
-
-The purpose of this repo is to be as template to booststrap your __golang__ based backend with __bazel__ build system
-
-
+### bootstrap template for __golang__ backend with __bazel__
 
 ## Library versions
 

@@ -13,4 +13,3 @@ go_proto_library(
     protos = [":demo_service_proto"],
     visibility = ["//visibility:public"],
 )
-

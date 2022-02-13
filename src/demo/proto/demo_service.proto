@@ -1,3 +1,4 @@
+//nolint
 syntax = "proto3";
 
 package demo;
@@ -11,7 +12,7 @@ message DemoRequest {
 
 // Response proto for DemoService
 message DemoResponse {
-  repeated int64 answers = 1;
+  int64 answer = 1;
 }
 
 // RPC for DemoService

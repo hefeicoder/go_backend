@@ -1,16 +1,19 @@
 # go_backend
 bootstrap template for golang backend with bazel
 
-The main purpose of this code is to serve as template to booststrap your __golang__ based backend with __bazel__ build system
+The purpose of this repo is to be as template to booststrap your __golang__ based backend with __bazel__ build system
 
 
 
 ## Library versions
 
 ### Prerequisite
-install [golang](https://go.dev/doc/install)
+install [golang](https://go.dev/doc/install) if you don't have it already
 
 run `bash install_prerequisite.sh` to install all prerequisite
+
+add this `export PATH=$PATH:$HOME/go/bin` into your .bashrc or .zshrc
+
 
 ### Build system and compiler
 | Syntax                                             |        Version        | Description                                                                                                                 |

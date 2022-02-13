@@ -15,4 +15,4 @@ repos:
       hooks:
         -   id: bazel-buildifier
         -   id: go-imports
-        -   id: golangci-lint
+#        -   id: golangci-lint

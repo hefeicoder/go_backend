@@ -8,9 +8,7 @@ The main purpose of this code is to serve as template to booststrap your __golan
 ## Library versions
 
 ### Prerequisite
-
-#### [bazelisk](https://github.com/bazelbuild/bazelisk): (OSX) brew install bazelisk
-#### [pre-commit](https://pre-commit.com/) : (OSX) brew install pre-commit
+run `bash install_prerequisite.sh` to install all prerequisite
 
 ### Build system and compiler
 | Syntax                                             |        Version        | Description                                           |
@@ -23,9 +21,17 @@ The main purpose of this code is to serve as template to booststrap your __golan
 ### Server backend
 | Syntax                           |        Version        | Description                                           |
 |:---------------------------------|:---------------------:|:------------------------------------------------------|
-| [fasthttp](https://github.com/valyala/fasthttp) | 4.2.2  | Build system, fast and cross language (.bazelversion) |
+| [fasthttp](https://github.com/valyala/fasthttp) | v1.33.0  | fasthttp |
 
 ### Lint
+#### `./lint.sh` to lint everything: BUILD, json, golang, yaml etc
+| Syntax                                | Version | Description               |
+|:--------------------------------------|:-------:|:--------------------------|
+| [pre-commit](https://pre-commit.com/) | latest  | precommit/lint management |
+| buildifier                            | latest  | lint for BUILD file       |
+| goimports                             | latest  | lint for golang file      |
+| golangci-lint                         | latest  | Go linters aggregator that runs linters in parallel      |
+
 
 ### CI/CD
 

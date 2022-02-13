@@ -8,22 +8,24 @@ The main purpose of this code is to serve as template to booststrap your __golan
 ## Library versions
 
 ### Prerequisite
+install [golang](https://go.dev/doc/install)
+
 run `bash install_prerequisite.sh` to install all prerequisite
 
 ### Build system and compiler
-| Syntax                                             |        Version        | Description                                           |
-|:---------------------------------------------------|:---------------------:|:------------------------------------------------------|
-| [Bazel](https://bazel.build/)                      | 4.2.2  | Build system, fast and cross language (.bazelversion) |
-| [bazelisk](https://github.com/bazelbuild/bazelisk) |          N/A          | Manage bazel version for the project                  |
-| [rules_go](https://go.dev/)                        |  v0.30.0    | Golang build rules for bazel  (version in WORKSPACE)  |
-| [golang](https://go.dev/)                          |  1.17.7    | Golang (version in WORKSPACE)                         |
+| Syntax                                             |        Version        | Description                                                                                                                 |
+|:---------------------------------------------------|:---------------------:|:----------------------------------------------------------------------------------------------------------------------------|
+| [Bazel](https://bazel.build/)                      | 4.2.2  | Build system, fast and cross language (.bazelversion)                                                                       |
+| [bazelisk](https://github.com/bazelbuild/bazelisk) |          N/A          | Manage bazel version for the project                                                                                        |
+| [rules_go](https://go.dev/)                        |  v0.30.0    | Golang build rules for bazel  (version in WORKSPACE)                                                                        |
+| [golang](https://go.dev/)                          |  1.17.7    | Golang (version in WORKSPACE), note: this golang is for building this project and will not be conflicit with the system one |
 
 ### Server backend
 | Syntax                           |        Version        | Description                                           |
 |:---------------------------------|:---------------------:|:------------------------------------------------------|
 | [fasthttp](https://github.com/valyala/fasthttp) | v1.33.0  | fasthttp |
 
-### Lint
+### Lint with pre-commit hook
 #### `./lint.sh` to lint everything: BUILD, json, golang, yaml etc
 | Syntax                                | Version | Description               |
 |:--------------------------------------|:-------:|:--------------------------|

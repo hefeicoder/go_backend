@@ -3,6 +3,8 @@ package server
 import (
 	"context"
 
+	"logger"
+
 	dsp "demo/proto/demo_service_proto"
 )
 
@@ -19,9 +21,12 @@ func New(ctx context.Context) (*DemoService, error) {
 // GetFeature
 func (*DemoService) GetFeature(ctx context.Context, req *dsp.DemoRequest) (*dsp.DemoResponse, error) {
 	var sum int64 = 0
+	logger.Infof("GetFeature called: %v", req.String())
+
 	for _, v := range req.GetKeys() {
 		sum += int64(v)
 	}
+
 	return &dsp.DemoResponse{
 		Answer: sum,
 	}, nil

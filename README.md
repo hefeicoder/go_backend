@@ -3,6 +3,7 @@
 
 ### Why?
 * immediately start a repo for golang based backend service
+* demo server and client using grpc/protobuf
 * modern toolchain including build system/backend libraries/linter
 
 ## Demo HTTP server using grpc/protobuf as protocol

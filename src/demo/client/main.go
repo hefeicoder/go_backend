@@ -2,9 +2,9 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"google.golang.org/protobuf/proto"
 	"io/ioutil"
+	"logger"
 	"net/http"
 	"time"
 
@@ -27,7 +27,7 @@ func main() {
 
 	resp, err := c.Post("http://localhost:8080/get_feature", content_type, body)
 	if err != nil {
-		fmt.Printf("Post request error %s", err)
+		logger.Errorf("Post request error %s", err)
 		return
 	}
 	defer resp.Body.Close()
@@ -36,9 +36,9 @@ func main() {
 	respProto := dsp.DemoResponse{}
 	err = proto.Unmarshal(respBody, &respProto)
 	if err != nil {
-		fmt.Printf("Unmarshal error %s", err)
+		logger.Errorf("Unmarshal error %s", err)
 		return
 	}
 
-	fmt.Printf("Response: %s", respProto.String())
+	logger.Infof("Response: %s", respProto.String())
 }

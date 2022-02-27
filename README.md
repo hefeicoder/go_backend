@@ -20,9 +20,10 @@ add this `export PATH=$PATH:$HOME/go/bin` into your .bashrc or .zshrc
 | [golang](https://go.dev/)                          |  1.17.7    | Golang (version in WORKSPACE), note: this golang is for building this project and will not be conflicit with the system one |
 
 ### Server backend
-| Syntax                           |        Version        | Description                                           |
-|:---------------------------------|:---------------------:|:------------------------------------------------------|
-| [fasthttp](https://github.com/valyala/fasthttp) | v1.33.0  | fasthttp |
+| Syntax                                          |        Version        | Description |
+|:------------------------------------------------|:---------------------:|:------------|
+| [fasthttp](https://github.com/valyala/fasthttp) | v1.33.0  | fasthttp    |
+| [go.uber.org/zap](go.uber.org/zap)       | v1.21.0  | logging     |
 
 ### Lint with pre-commit hook
 #### `./lint.sh` to lint everything: BUILD, json, golang, yaml etc

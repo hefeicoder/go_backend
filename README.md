@@ -1,5 +1,9 @@
-# go_backend
-### bootstrap template for __golang__ backend with __bazel__
+
+### Bootstrap template for __golang__ backend service with __bazel__ and __grpc/protobuf__
+
+### Why?
+* immediately start a repo for golang based backend service
+* modern toolchain including build system/backend libraries/linter
 
 ## Demo HTTP server using grpc/protobuf as protocol
 
@@ -8,8 +12,6 @@
 
 ### Client:
 ```bazel run src/demo/client:client```
-
-
 
 ## Library versions
 

@@ -1,6 +1,16 @@
 # go_backend
 ### bootstrap template for __golang__ backend with __bazel__
 
+## Demo HTTP server using grpc/protobuf as protocol
+
+### Server:
+```bazel run src/demo/demoserver```
+
+### Client:
+```bazel run src/demo/client:client```
+
+
+
 ## Library versions
 
 ### Prerequisite
